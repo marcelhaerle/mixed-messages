@@ -8,4 +8,8 @@ const selectedRandomQuote = () => {
     return quotes[rndIdx]
 }
 
-console.log(selectedRandomQuote())
+const messageFromQuote = (quote) => {
+    return `"${quote.text}"\n - ${quote.person}\n`
+}
+
+console.log(messageFromQuote(selectedRandomQuote()))
